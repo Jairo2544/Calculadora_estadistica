@@ -1,12 +1,12 @@
 # Calculadora_estadistica
-This code is made with "readline-sync"
-It can be installed from the console by placing "npm install readline-sync"
-When we run with "node main.js"
-We will give ourselves 3 options:
-1- To enter unlimited data xi
-    It will ask us "Number or Tr", when putting a number it will be added to the formula, if we put "Tr" it will give us the result and if we put another value, it will tell us to enter a valid character
-    --> If we put the numbers: [1, 2, 3, 4, 2, 3, 4, 2, 3, 4, 2, 1] in any order
-        It will throw us the following:
+Este codigo esta hecho con "readline-sync"
+Se puede instalar desde la consola colocando "npm install readline-sync"
+Cuando ejecutamos con "node main.js"
+Nos dará 3 opciones:
+1- Para meter datos xi ilimitados
+    Nos preguntara "Numero o Tr", al poner un numero se agregara a la formula, si ponemos "Tr" nos dará el resultado y si ponemos otro valor, nos dira que ingresemos un caracter válido
+    --> Si metemos los numeros: [1, 2, 3, 4, 2, 3, 4, 2, 3, 4, 2, 1] en cualquier orden
+        Nos arrojará lo siguiente:
                 xi      fi
                 1       2
                 2       4
@@ -19,9 +19,9 @@ We will give ourselves 3 options:
                 VARIANZA:  1.0763888888888884
                 DESVIACION ESTANDAR:  1.0374916331657276 
 
-2- To put unlimited xi with their respective fi
-    It will ask us "Number or Tr", when putting a number it will be added to the formula, followed by this it will ask us "quantity", here we will place the amount of repetition, when this is finished it will ask another number until we place "Tr". All fields are validated in the code (you cannot enter a word instead of a number)
-    --> If we enter the data in this way
+2- Para meter xi ilimitados con su respectivo fi
+    Nos preguntara "Numero o Tr", al poner un numero se agregara a la formula, seguido de esto nos preguntará "cantidad", aquí colocaremos la cantidad de repetición, terminado esto volvera a preguntar otro número hasta que coloquemos "Tr". Todos los campos estan validados en el código (no se puede meter una palabra en vez de un numero)
+    --> Si ingresamos los datos de esta manera
             Numero o Tr: 1
             Cantidad: 2
             Numero o Tr: 2
@@ -43,14 +43,14 @@ We will give ourselves 3 options:
                     VARIANZA:  1.0763888888888884
                     DESVIACION ESTANDAR:  1.0374916331657276
 
-    Note: In case of repetition in the number, the amounts will be added
-        Example: 
+    Nota: En caso de repeticion en el número, las cantidades se sumaran
+        Ej: 
             Numero o Tr: 1
             Cantidad: 2
             Numero o Tr: 1
             Cantidad: 4
-            --> It will give us
+            --> Nos dará
                 xi      fi
                 1       6
 
-3- In case of putting 3, we will finish the code and it will give us a farewell message
+3- En caso de poner 3, terminaremos el código y nos dará un mensaje de despedida
