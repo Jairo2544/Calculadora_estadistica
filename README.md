@@ -1,10 +1,16 @@
 # Calculadora_estadistica
 This code is made with "readline-sync"
+
 It can be installed from the console by placing "npm install readline-sync"
+
 When we run with "node main.js"
+
 We will give ourselves 3 options:
+
 1- To enter unlimited data xi
+    
     It will ask us "Number or Tr", when putting a number it will be added to the formula, if we put "Tr" it will give us the result and if we put another value, it will tell us to enter a valid character
+    
     --> If we put the numbers: [1, 2, 3, 4, 2, 3, 4, 2, 3, 4, 2, 1] in any order
         It will throw us the following:
                 xi      fi
@@ -20,7 +26,9 @@ We will give ourselves 3 options:
                 DESVIACION ESTANDAR:  1.0374916331657276 
 
 2- To put unlimited xi with their respective fi
+    
     It will ask us "Number or Tr", when putting a number it will be added to the formula, followed by this it will ask us "quantity", here we will place the amount of repetition, when this is finished it will ask another number until we place "Tr". All fields are validated in the code (you cannot enter a word instead of a number)
+    
     --> If we enter the data in this way
             Numero o Tr: 1
             Cantidad: 2
