@@ -61,4 +61,12 @@ Nos dará 3 opciones:
                 xi      fi
                 1       6
 
-3- En caso de poner 3, terminaremos el código y nos dará un mensaje de despedida
+3- En caso de poner 3, podemos completar una tabla incompleta si es posible.
+
+    Nos preguntara la cantidad de divisiones que hay, luego los xi y finalmente ingresaremos los fi, Fi, hi e Hi que .tengamos. El programa comenzara a resolverlo, en caso de que no tenga solucion se quedara en un bucle infinito que se puede detener con "ctrl + C".
+
+4- En el caso del 4, podremos completar datos con intervalos
+    
+    Insertando los limites, la cantidad de divisiones y una columna entera (fi, Fi, hi, Hi) o insertando los datos que tengamos, nos dará la tabla hecha que mostrara la marca de clase, fi, Fi, hi, Hi, promedio, mediana, moda, varianza y desviacion estandar.
+
+5- Sale de la calculadora

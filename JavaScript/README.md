@@ -61,4 +61,12 @@ We will give ourselves 3 options:
                 xi      fi
                 1       6
 
-3- In case of putting 3, we will finish the code and it will give us a farewell message
+3- In case of putting 3, we can complete an incomplete table if possible.
+
+    It will ask us the number of divisions there are, then the xi and finally we will enter the fi, Fi, hi and Hi that we have. The program will begin to solve it, in case it does not have a solution it will stay in an infinite loop that can be stopped with "ctrl + C".
+
+4- In the case of 4, we can complete data with intervals
+    
+    Inserting the limits, the number of divisions and a whole column (fi, Fi, hi, Hi) or inserting the data we have, will give us the table made that will show the class mark, fi, Fi, hi, Hi, average, median, mode, variance and standard deviation.
+
+5- Exits the calculator
