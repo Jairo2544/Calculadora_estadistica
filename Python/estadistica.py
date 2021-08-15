@@ -99,7 +99,7 @@ def mediana(array):
 		mediana = array[int(len(array)/2)]
 		return mediana
 
-# Encontrar la varianza
+# Encontrar la varianza para una poblacion
 def varianza(array):
 	suma = 0
 	#Hallamos la suma de cuadrados
@@ -113,10 +113,31 @@ def varianza(array):
 			varianza = int(varianza)
 	return varianza
 
+#Encontrar la varianza para una muestra
+def varianzaMuestra(array):
+	suma = 0
+	#Hallamos la suma de cuadrados
+	i = 0
+	while(i < len(array)):
+		suma = suma + (array[i] ** 2)
+		i = i + 1
+	# Terminamos el procedimiento
+	varianza = ((suma/(len(array)-1)) - (promedio(array) ** 2))
+	if varianza - int(varianza) == 0:
+			varianza = int(varianza)
+	return varianza
+
+# Desviacion Estandar para una poblacion
 def desviacionEstandar(array):
 	desviacionEstandar = varianza(array) ** (1/2)
 	return desviacionEstandar
 
+#Desviacion Estandar para una muestra
+def desviacionEstandarMuestra(array):
+	desviacionEstandar = varianzaMuestra(array) ** (1/2)
+	return desviacionEstandar
+
+#Moda
 def moda(array):
 	array = ordenar(array)
 	# Cantidad de datos
@@ -166,11 +187,29 @@ def verificarTexto(text):
 	numeros = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
 	i = 0
 	ver = True
-	f = 0
 	while(i < len(cifras)):
 		a = 0
 		while(a < len(numeros)):
 			if (cifras[i] == numeros[a]):
+				ver = False
+				break
+			else:
+				ver = True
+			a = a + 1
+		if(ver == True):
+			break
+		i = i + 1
+	return ver
+
+# Validar Arrays
+def validarArray(array):
+	numeros = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+	i = 0
+	ver = True
+	while(i < len(array)):
+		a = 0
+		while(a < len(numeros)):
+			if (array[i] == numeros[a]):
 				ver = False
 				break
 			else:

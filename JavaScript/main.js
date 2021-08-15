@@ -114,7 +114,7 @@ do{
 							console.log("¡Ingrese un caracter valido!")
 						}
 					} while (parseInt(x).toString() == "NaN");
-					xi.push(parseInt(x))
+					xi.push(parseFloat(x))
 				}
 				let fi = [];
 				let Fi = [];
