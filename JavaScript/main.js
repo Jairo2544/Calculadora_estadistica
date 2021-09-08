@@ -701,28 +701,24 @@ do{
 				let expandir = estadistica.expandir(marcaDeClase, cantidad);
 				console.log("	PROMEDIO: ", estadistica.promedio(expandir));
 				// Mediana
-				let med = estadistica.mediana(expandir)
-				for (i = 0; i < Is; i++) {
-					if (marcaDeClase[i] == med) {
-					break;
+				let med;
+				if (total % 2 == 0) {
+					med = total/2						
+				}
+				else {
+					med = (total + 1)/2
+				};
+				for (i=0; i<cantidad.length; i++) {
+					if (FiA[i]>med) {
+						break;						
 					}
 				};
 				let mediana;
 				if (i == 0){
-					if(total % 2 == 0) {
-						mediana = limInf[i] + ((total/2)/cantidad[i])*anchoDeClase
-					}
-					else {
-						mediana = limInf[i] + (((total + 1)/2)/cantidad[i])*anchoDeClase
-					};
+					mediana = limInf[i] + ((total/2)/cantidad[i])*anchoDeClase
 				}
 				else { 
-					if(total % 2 == 0) {
-						mediana = limInf[i] + (((total/2) - FiA[i-1])/cantidad[i])*anchoDeClase
-					}
-					else {
-						mediana = limInf[i] + ((((total + 1)/2) - FiA[i - 1])/cantidad[i])*anchoDeClase
-					};
+					mediana = limInf[i] + (((total/2) - FiA[i-1])/cantidad[i])*anchoDeClase
 				}
 				console.log("	MEDIANA: ", mediana);
 				// Moda
@@ -755,4 +751,4 @@ do{
 		case "5": //Colocamos un mensaje de despedida
 			if (selection == 5) {console.log("Gracias por usar la calculadora")};
 	};
-} while (selection != 4);
+} while (selection != 5);
